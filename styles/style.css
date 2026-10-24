@@ -238,3 +238,22 @@ header {
     transform: translateY(-0.25rem);
     background: #67e8f9;
 }
+
+/* 6. SOBRE NOSOTROS */
+
+.about {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.about h2,
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 0.625rem;
+}
+
+.about p {
+    color: var(--muted);
+    max-width: 40rem;
+    margin: 0 auto;
+}
