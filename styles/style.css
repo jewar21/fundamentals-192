@@ -320,3 +320,49 @@ card-icon {
     border-top: 1px solid #334155;
     color: var(--muted);
 }
+
+/* 9. RESPONSIVE DESIGN */
+
+/* Tablets */
+@media (min-width: 600px){
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Computadores */
+
+@media (min-width: 900px){
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .hero-content {
+        max-width: 40rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Accesibilidad */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
