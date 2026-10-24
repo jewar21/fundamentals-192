@@ -113,3 +113,58 @@ a {
     visibility: hidden;
     pointer-events: none;
 }
+
+/* 3. CONTENIDO DE LA LANDING */
+
+.website {
+    opacity: 0;
+    transition: opacity 800ms ease;
+}
+
+.website.show {
+    opacity: 1;
+}
+
+/* 4. NAVEGACION */
+
+header {
+    background: #0b1220;
+    border-bottom: 1px solid #334155;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 1.25rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--muted);
+    transition: color 300ms ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
