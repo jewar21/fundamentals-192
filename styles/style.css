@@ -117,7 +117,7 @@ a {
 /* 3. CONTENIDO DE LA LANDING */
 
 .website {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 800ms ease;
 }
 
