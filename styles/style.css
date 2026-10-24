@@ -105,3 +105,11 @@ a {
         transform: rotate(1turn)
     }
 }
+
+/* Estado de salida */
+
+.loader.hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
